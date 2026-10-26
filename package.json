@@ -1,0 +1,26 @@
+{
+  "name": "dsh-channel-weixin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Weixin (ClawBot / iLink) channel for DeepSeek Harness: QR login, long-poll, DSH sessions",
+  "main": "./src/plugin.mjs",
+  "exports": {
+    ".": "./src/plugin.mjs",
+    "./ilink": "./src/ilink.mjs"
+  },
+  "bin": {
+    "dsh-weixin-login": "./bin/login.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "src/",
+    "bin/",
+    "cordis.patch.yml",
+    "README.md"
+  ]
+}

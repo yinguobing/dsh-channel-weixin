@@ -1,0 +1,7 @@
+# 微信 ClawBot 通道：挂载后随宿主进程启动，不依赖 web/webserver。
+# accountsDir 默认取 $DSH_HOME/weixin（未设置 DSH_HOME 时为 ~/.dsh/weixin）。
+- insert:
+    - id: weixin-channel
+      name: 'dsh-channel-weixin'
+      config:
+        approval: true

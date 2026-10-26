@@ -1,0 +1,6 @@
+node_modules/
+*.log
+.test*/
+.test-home/
+.DS_Store
+sessions-*.json
